@@ -1,0 +1,18 @@
+{
+    "liveServer.settings.CustomBrowser": null,
+    "liveServer.settings.useWebExt": true,
+    "liveServer.settings.useLocalIp": true,
+    "liveServer.settings.NoBrowser": true,
+    "liveServer.settings.host": "10.0.0.152",
+    "liveServer.settings.fullReload": true,
+    "liveServer.settings.root": "/",
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+    "liveServer.settings.ChromeDebuggingAttachment": true,
+    "liveServer.settings.https": {
+        "cert": "10.0.0.152"
+    },
+    "liveServer.settings.proxy": {
+        "baseUri": "http://10.0.0.152:8080",
+        "proxyUri": "http://10.0.0.152:80"
+    }
+}

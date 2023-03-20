@@ -1,0 +1,570 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Satisfy' , sans-serif;
+}
+header{
+    width: 100%;
+    height: 140px;
+    opacity: 0.9;
+    content: "";
+    position: fixed;   
+    background: linear-gradient(rgb(0, 0, 0), transparent);
+    pointer-events:all;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cabecalho{
+    width:100% ;
+    height: 70px;
+    display: flex;      
+    z-index: 9999;
+    justify-content: space-between;
+}
+.cabecalho section{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.cabecalho img{
+    width: 70px;
+    height: 50px;
+}
+
+.cabecalho h1{
+    color: azure;
+    margin-top: 15px;
+    margin-left: 10px;  
+    font-size: 42px;
+    text-shadow: 0 1px 5px  rgb(218, 228, 76);
+}
+
+ .menu .links{
+    width: 28vw;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    margin: 12px 15px;
+    font-size: 22px;
+    list-style: none;
+  
+}
+  .links a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px; 
+    cursor: pointer;  
+}
+.links a:hover{
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+
+main{
+    background-color: rgb(230, 227, 227);
+    
+}
+
+.container-apresentacao{
+    width:100vw;
+    height:600px;
+    overflow: hidden;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    background-image:linear-gradient(45deg,#3A1C71,#D76D77,#FFAF7B); 
+    background-size: 100% 100%;  
+}
+
+.titulo{
+    min-width:320px;
+    height: 300px;
+    display: flex;    
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left:200px;
+    line-height: 90px;
+}
+.titulo h2{
+    font-size: 3rem;
+    letter-spacing: 3px;
+    color: antiquewhite;
+    text-align: center;
+    animation: fadeInAnimation ease-in-out 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation{
+    0% {
+        opacity: 0.0;
+    }
+    25% {
+        opacity: 0.0;
+    }
+    45% {
+        opacity: 0.0;
+    }
+    65% {
+        opacity: 0.3;
+    }
+    80% {
+        opacity: 0.5;
+    }
+    90% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.titulo-apresentacao{
+    width: 100vw;
+    height: 610px;
+    text-align: center;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(45deg,#0B486B,#F56217);
+    
+}
+.titulo-apresentacao h1{
+    margin: 20px auto;
+    font-size: 38px;
+    color:gainsboro;
+    text-shadow: 8px 5px 15px  rgb(214, 211, 49);
+}
+.segunda-apresentacao{
+    width: 98%;
+    height: 500px;
+    background-image: url("/assets/imagens/foto25.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.frase-apresentacao{
+    width: 40%;
+    height: 550px;    
+    border-radius: 10px;
+    margin:30px 100px;
+    padding: 15px;
+    display: flex;
+    font-size: 25px;
+    line-height: 40px;
+    text-shadow: 6px 2px 8px rgb(58, 58, 57);
+    align-items: center;
+    border: 1px solid gainsboro;
+    color: rgb(252, 252, 252);
+    background: rgba(35, 46, 36, 0.445);
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    box-shadow: 0px 8px 15px rgb(117, 115, 115);
+    
+}
+
+.card{
+    width: 400px;
+    height: 500px;
+    margin-top: 30px;    
+    position:relative;
+    display: flex;
+    align-items: center;    
+}
+
+.card img{
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    object-fit:contain;
+    box-shadow: 0px 0px 10px wheat;    
+}
+
+.card > #primeira{
+    position:absolute ;
+    right: 0;top: 0;
+    background-color: #0B486B;
+}
+
+.card > #segunda{
+    background-color: #cc551a;
+    position:absolute;    
+    left: 120px;
+    
+}
+.card > #terceira{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+   
+}
+
+.divisao{
+    width: 100vw;
+    height: 220px;
+    padding: 50px 0;
+    text-align: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/assets/imagens/fundo2.jpg");
+}
+
+.titulo-cardapio{   
+    width: 40%;
+    border: 2px solid white;
+    border-radius: 35px; 
+    margin: 110px auto;
+    color: #21c9a4;
+    letter-spacing: 5px;
+    font-size: 42px;
+    text-shadow: 3px 0px 5px rgb(14, 13, 13); 
+    background-color: rgba(133, 72, 23, 0.295);
+    backdrop-filter: blur(3px);
+    
+}
+
+.cardapio{
+    width: 100vw;
+    min-height: 1024px;
+    display:flex;
+    padding: 20px;
+    background-color: #bab0cc;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+.cards-lanches{
+    width: 80vw;
+    height: 100%;
+   display: flex;
+   justify-content:space-evenly;
+   flex-wrap: wrap;
+   align-items: center;
+   gap: 30px;
+}
+
+.fotos{    
+    width: 280px;
+    height: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;     
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px black;
+    
+}
+.fotos:hover{
+    transform: scale(1.1);
+    transition: all 0.7s;
+    
+}
+.fotos img{
+    width: 280px;
+    height: 180px;
+    object-fit: cover;    
+    border-radius: 8px 8px 30px 30px;   
+}
+
+.barra-titulo{
+    font-size: 1.2rem;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid;
+    border-radius:30px;
+    position: absolute;    
+    right:36px;
+    top:160px;
+    color:white;
+    background-color:rgba(0, 0, 0, 0.192);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px black;
+}
+
+ .ingredientes{
+     width: 280px;
+     height:250px;
+    display: flex;
+    flex-flow: nowrap column;
+    align-items: start;
+    margin-top: 40px;     
+}
+
+.ingredientes ul>li{
+    display: block;
+    font-size: 1.2rem;
+    margin-left:20px;
+    width: 100%;
+   line-height: 28px;
+   color: aliceblue;
+   text-shadow: 3px 0 5px black;
+}
+
+.cardapio a{
+    text-decoration: none;
+    border: 3px solid #21c9a4;
+    border-radius: 40px;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 22px;
+    color: #bce4db;
+    background-color: #3A1C71;
+    box-shadow: 0px 5px 6px rgb(61, 47, 47);
+}
+
+.bigrafao{background: linear-gradient(1deg,#faba0b,#3ffc10);}
+
+.bacon{ background: linear-gradient(-150deg,#0516fd,#30ceda);}
+
+.salada{background: linear-gradient(1deg,#0acc03,#76cbe2);}
+
+.egg{background: linear-gradient(1deg,#8901f8,#f8ee5f);}
+
+.calabresa{background: linear-gradient(1deg,#B24592,#F15F79);}
+
+.burguer{background: linear-gradient(#e6bd8c,#f89704);}
+
+
+.sobre{
+    width: 100vw;
+    height: 450px;
+    display: flex;
+    border-top: 3px solid rgb(0, 153, 255);
+    background: linear-gradient(-45deg,#20002c,#8c2ea8,#cbb4d4);
+    align-items: center;
+    overflow: hidden;
+}
+.sobre-nos{
+    width: 100%;
+    height: 80%;
+    padding: 20px;
+    
+
+}
+.sobre-nos div{
+    width:80%;
+    height: 100%;
+    margin: auto;
+    padding: 40px;
+    border-radius: 5px;  
+    background-color: rgba(247, 242, 242, 0.24);
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 5px 10px;
+}
+.sobre-nos div>p{
+    font-size: 28px;
+    text-align: start;
+    letter-spacing: 1px;
+
+}
+
+.local{
+    width: 70%;
+    height: 80%;  
+    text-align: center;
+    color:#fcfbfc;
+    text-shadow: 2px 5px 5px black;
+}
+
+.local iframe{
+    width: 80%;
+    height: 80%;
+    margin-top: 10px;
+    border-radius: 30px;
+    box-shadow: 0px 8px 10px rgb(0, 0, 0);
+}
+footer{
+    height: 150px;
+    width:100vw;
+    margin-top: -15px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: rgb(36, 30, 30);
+    border-radius: 20px 20px 0 0;
+        
+}
+footer p{
+    font-size: 18px;
+    color: whitesmoke;
+    
+}
+
+.redes-sociais{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.redes-sociais img{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    filter: invert();
+    margin: 20px;
+    cursor: pointer;
+}
+
+.redes-sociais img:hover{
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: all 0.4s;    
+}
+
+#zap{
+    width: 80px;
+    height: 80px;
+    position:fixed;
+    border-radius: 50%;
+    right: 40px;
+    bottom: 40px;
+    cursor: pointer;
+    border: 2px solid white;  
+}
+
+#zap:hover{
+    transform: scale(1.8);
+    transition: all 0.6s;
+}
+
+
+
+
+
+@media(min-width:280px ) and (max-width:600px){
+
+    header .menu{
+        display: none;
+    }
+
+    .container-apresentacao{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .titulo{
+        width: 50%;
+      margin:80px auto 0px auto;
+    
+    }
+
+    .segunda-apresentacao{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .frase-apresentacao{
+        width: 90%;
+        height: 450px;
+    }
+
+    .frase-apresentacao p{
+        font-size: 20px;
+    }
+
+    .titulo-cardapio{
+        width: 86%;
+        font-size: 30px;  
+        letter-spacing: 0;      
+    }
+
+    .cardapio a{
+        margin-top: 30px;
+        width: 80%;
+        line-height: 40px;
+    }
+
+    .sobre{
+        display: flex;
+        width: 100%;
+        height: 700px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-nos div {
+        width: 90vw;
+        height: 400px;
+        margin-top: 20px;
+        padding: 30px;
+    }
+    .sobre-nos div p{ 
+        font-size: 24px; 
+    }
+
+    .local iframe{
+        width: 100%;
+        
+
+    }
+    .footer{
+        height: auto ;
+    }
+
+    #zap{
+        width: 70px;
+        height: 70px;
+        position:fixed;
+        right:10px;
+        
+
+    }
+    
+    .redes-sociais img{
+        width: 30px;
+        height: 30px;
+    }
+   
+   
+
+    
+      
+
+    .card{
+        display: none;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+   
+
+
+
+    
+    
+    
+
+
