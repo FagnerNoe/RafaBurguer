@@ -17,5 +17,5 @@ digitar();
 
 });
 
-let zap = document.getElementById('zap');
+
 
